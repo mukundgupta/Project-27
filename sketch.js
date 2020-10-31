@@ -66,10 +66,6 @@ function keyPressed() {
 	if (keyCode === UP_ARROW) 
 	{ Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-55,y:-45}); } 
 
-if (keyCode === DOWN_ARROW) 
-	{ Matter.Body.applyForce(bob5.body,bob5.body.position,{x:55,y:45}); } 
-} 
-
 	function drawLine(constraint) { 
 		bobPosition = constraint.bodyA.position 
 		roofPosition = constraint.bodyB.position 
