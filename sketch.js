@@ -45,7 +45,7 @@ function draw() {
   rectMode(CENTER);
   background(255,250,250);
   Engine.update(engine);
-  console.log("updated")
+  
   bob1.display();
   bob2.display();
   bob3.display();
@@ -65,6 +65,10 @@ function draw() {
 function keyPressed() { 
 	if (keyCode === UP_ARROW) 
 	{ Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-55,y:-45}); } 
+
+if (keyCode === DOWN_ARROW) 
+	{ Matter.Body.applyForce(bob5.body,bob5.body.position,{x:55,y:45}); } 
+} 
 
 	function drawLine(constraint) { 
 		bobPosition = constraint.bodyA.position 
